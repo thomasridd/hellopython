@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'hello python server is running'
+    return 'hello python server is running now'
 
 @app.route("/rest", methods=['GET'])
 def get_hello():
