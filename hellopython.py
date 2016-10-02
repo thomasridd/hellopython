@@ -13,7 +13,7 @@ def hello():
 def get_hello():
 
     # Message object
-    msg = {"message":"Hello world!","greetings":["Ho ho ho!","Simple REST rocks"]}
+    msg = {"message":"Hello world!","greetings":["Happy October!","Simple REST rocks"]}
 
     # Return JSON response
     return Response(dumps(msg), mimetype="application/json")
