@@ -1,4 +1,6 @@
 from flask import Flask
+from flask import Response
+
 from json import dumps
 
 app = Flask(__name__)
@@ -14,7 +16,7 @@ def get_hello():
     msg = {"message":"Hello world!","greetings":["Ho ho ho!","Simple REST rocks"]}
 
     # Return JSON response
-    return dumps(msg)
+    return Response(dumps(msg), mimetype="application/json")
 
 if __name__ == "__main__":
     app.run()
